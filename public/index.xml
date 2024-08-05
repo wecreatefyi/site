@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>We Create</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on We Create</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 04 Aug 2024 22:26:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>//localhost:1313/posts/hello-world/</link>
+      <pubDate>Sun, 04 Aug 2024 22:26:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/hello-world/</guid>
+      <description>Hello, world! We are We Create, a Hack Club centered in Oshkosh, Wisconsin. As we get started with our meetings, we will continue to update this site with chronicles of our adventures as a club!&#xA;Written by Michael H, co-founder of We Create</description>
+    </item>
+    <item>
+      <title>Welcome to the Oshkosh Hack Club!</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Sun, 04 Aug 2024 22:09:54 -0500</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>We are The Oshkosh Hack Club, also known as We Create, fiscally sponsored by The Hack Foundation.&#xA;Established in 2024, we set out on a mission to solve a problem in our community; The lack of computer literacy. We wish to empowering young engineers in the Oshkosh area to use computers to plan, make, and ship personal projects by helping them learn about computers, software, and hardware.&#xA;Partnered with the Oshkosh Public Library, we offer free and public meetings every other week to elementary, middle, and high schoolers in the area.</description>
+    </item>
+  </channel>
+</rss>
