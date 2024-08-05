@@ -1,4 +1,4 @@
-baseurl = "wecreate.fyi"
+baseurl = "https://wecreate.fyi"
 title = "WeCreate"
 languageCode = "en-us"
 theme = "hello-friend-ng"
