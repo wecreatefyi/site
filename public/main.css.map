@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/moodi/OneDrive/Documents/(1) Coding Projects/Wecreate/wecreate",
+	"sourceRoot": "C:/Users/behla.000/Documents/coding/websites/wecreatefyi",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",

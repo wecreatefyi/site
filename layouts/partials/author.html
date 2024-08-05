@@ -1,0 +1,19 @@
+<!--  This partial outputs the author name of a page -->
+<!-- If multiple authors are defined in the front matter, they will be separated by a comma. -->
+
+<!-- `-` is used to remove the whitespace before and after the author name. -->
+{{- if .Params.authors -}}
+  {{- range $index, $author := .Params.authors -}}
+    {{- if $index }}, {{ end }}{{ $author }}
+  {{- end -}}
+{{- else if .Params.author -}}
+  {{ .Params.author -}}
+{{- else if .Site.Author -}}
+  {{- range $index, $author := .Site.Author -}}
+    {{- if $index }}, {{ end }}{{ $author }}
+  {{- end -}}
+{{- else if .GitInfo -}}
+  {{- with .GitInfo -}}
+    {{ .AuthorName -}}
+  {{- end -}}
+{{- end -}}

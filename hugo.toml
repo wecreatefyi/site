@@ -1,65 +1,80 @@
-baseurl      = ""
-title        = "We Create"
+baseurl = "wecreate.fyi"
+title = "WeCreate"
 languageCode = "en-us"
-theme        = "hello-friend-ng"
-paginate     = 10
+theme = "hello-friend-ng"
+paginate = 10
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+enableEmoji = true
+enableGitInfo = true
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+gitUrl = "https://github.com/wecreatefyi/site/commit/"
+# Metadata mostly used in document's head
+description = "The official website of WeCreate, the Oshkosh Hack Club."
+images = [""]
 
-  # Subtitle for home
-  homeSubtitle = "Welcome to the Oshkosh Hack Club!"
+# Subtitle for home
+homeSubtitle = "Welcome to the Oshkosh Hack Club! We create stuff, FYI."
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+# Enable sharing buttons, if you like
+enableSharingButtons = false
+# Show a global language switcher in the navigation bar
+enableGlobalLanguageMenu = false
+# dateform = "Jan 2, 2006"
+# dateformShort = "Jan 2"
+# dateformNum = "2006-01-02"
+# dateformNumTime = "2006-01-02 15:04"
 
-  # Enable sharing buttons, if you like
-  enableSharingButtons = false
-  
-  # Show a global language switcher in the navigation bar
-  enableGlobalLanguageMenu = false
+[params.logo]
+  logoMark     = ">"
+  logoText     = "WeCreate"
+  logoHomeLink = "/"
+  # Set true to remove the logo cursor entirely.
+  # logoCursorDisabled = false
+  # Set to a valid CSS color to change the cursor in the logo.
+  # logoCursorColor    = "#67a2c9"
+  # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+  # logoCursorAnimate  = "2s"
+  # Append the current url pathname to logoText 
+  # logoCursorPathname = true
 
-  # Metadata mostly used in document's head
-  description = "The official Oshkosh Hack Club website"
-  keywords = "homepage, blog"
-  images = [""]
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+category = "blog"
+tag = "tags"
+series = "series"
 
-[languages]
-  [languages.en]
-    title = "We Create"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
 
-  [languages.en.params]
-    subtitle  = "A simple theme for Hugo"
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts"
+[[menu.main]]
+identifier = "about"
+name = "About us"
+url = "/about"
+[[menu.main]]
+identifier = "finances"
+name = "Public Finances"
+url = "https://hcb.hackclub.com/oshkosh-hack-club"
 
-    [languages.en.params.logo]
-      logoText = "We Create"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-  [[menu.main]]
-    identifier = "about"
-    name       = "About us"
-    url        = "/about"
-  [[menu.main]]
-    identifier = "finances"
-    name = "Public Finances"
-    url = "https://hcb.hackclub.com/oshkosh-hack-club"
+[frontmatter]
+# Commenting out as the hello-friend-ng theme already uses Git info when gitInfo is enabled
+# # date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+# date = ['date', 'pubdate' , 'lastmod', 'modified']
+# expiryDate = ['expiryDate', 'unpublishdate']
+# lastmod = [
+#   'lastmod',
+#   'modified',
+#   ':git',
+#   'date',
+#   'publishDate',
+#   # 'publishdate',
+#   'pubdate',
+#   # 'published',
+# ]
+# # publishDate = ['publishdate', 'pubdate', 'published', 'date']
+# publishDate = ['publishDate', 'pubdate', 'date']
