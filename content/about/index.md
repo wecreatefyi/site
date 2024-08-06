@@ -19,4 +19,7 @@ Partnered with the [Oshkosh Public Library](https://www.oshkoshpubliclibrary.org
 
 Our first meeting is Saturday, September 7th, and subsequent meetings take place every other saturday.
 
-#### More information is coming soon. We hope to see you at a meeting!
+### Leadership
+{{<member>}}
+
+**More information is coming soon. We hope to see you at a meeting!**

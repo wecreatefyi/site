@@ -1,0 +1,94 @@
+{{ $members := .Site.Data.members }}
+<div class="members">
+  {{ range $members }}
+    <div class="member">
+      {{ if .image }}
+        <div class="member-image-container">
+          <img src="{{ "/members/" | relURL }}{{ .image }}" alt="{{ .name }}" class="member-image">
+        </div>
+      {{ end }}
+      <div class="member-info">
+        <h3 class="member-name">
+          {{ if .link }}
+            <a href="{{ .link }}">{{ .name }}</a>
+          {{ else }}
+            {{ .name }}
+          {{ end }}
+        </h3>
+        <p class="member-description">{{ .description }}</p>
+      </div>
+    </div>
+  {{ end }}
+</div>
+<style>
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the members container */
+  }
+  .member {
+    text-align: center;
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .member-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .member-info {
+    width: 100%; /* Ensure member-info takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within member-info */
+  }
+  .member-name {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+  }
+  .member-name a {
+    /* text-decoration: none; */
+    color: inherit;
+  }
+  .member-description {
+    font-size: 1em;
+  }
+  @media (max-width: 768px) {
+    .member {
+      flex: 0 1 calc(50% - 20px);
+    }
+  }
+  @media (max-width: 480px) {
+    .member {
+      flex: 0 1 100%;
+    }
+  }
+  a {
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 15px;
+    color: #ffffff; /* White color for contrast */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  a:hover {
+    background-color: #4a90e2; /* Light blue background on hover */
+    color: #ffffff; /* Ensure text color remains white on hover */
+  }
+
+</style>
