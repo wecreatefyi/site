@@ -1,0 +1,3 @@
+{{- if site.Params.analytics.goatcounter.Code }}
+<script data-goatcounter="https://{{site.Params.analytics.goatcounter.Code}}.goatcounter.com/count" async src="{{ if site.Params.analytics.goatcounter.Src }}{{ site.Params.analytics.goatcounter.Src }}{{ else }}//gc.zgo.at/count.js{{ end }}"></script>
+{{- end }}
