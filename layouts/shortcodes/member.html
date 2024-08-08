@@ -10,7 +10,7 @@
       <div class="member-info">
         <h3 class="member-name">
           {{ if .link }}
-            <a href="{{ .link }}">{{ .name }}</a>
+            <a class="member-link" href="{{ .link }}">{{ .name }}</a>
           {{ else }}
             {{ .name }}
           {{ end }}
@@ -77,7 +77,7 @@
       flex: 0 1 100%;
     }
   }
-  a {
+  .member-link {
     text-decoration: underline;
     display: inline-block;
     margin-right: 15px;
@@ -86,7 +86,7 @@
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
-  a:hover {
+  .member-link:hover {
     background-color: #4a90e2; /* Light blue background on hover */
     color: #ffffff; /* Ensure text color remains white on hover */
   }

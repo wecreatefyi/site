@@ -11,7 +11,7 @@ enableGitInfo = true
 [params]
 gitUrl = "https://github.com/wecreatefyi/site/commit/"
 # Metadata mostly used in document's head
-description = "The official website of WeCreate, the Oshkosh Hack Club."
+description = "Welcome to the Oshkosh Hack Club! We are The Oshkosh Hack Club, also known as WeCreate, a nonprofit fiscally sponsored by The Hack Foundation."
 images = [""]
 
 # Subtitle for home
@@ -63,6 +63,11 @@ url = "/about"
 identifier = "finances"
 name = "Public Finances"
 url = "https://hcb.hackclub.com/oshkosh-hack-club"
+[[menu.main]]
+identifier = "donate"
+name = "Donate"
+url = "https://hcb.hackclub.com/donations/start/oshkosh-hack-club"
+
 
 [frontmatter]
 # Commenting out as the hello-friend-ng theme already uses Git info when gitInfo is enabled
